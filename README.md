@@ -1,2 +1,2 @@
 # FizzBuzz
-Practice for create a web application
+Practice for creating a web application

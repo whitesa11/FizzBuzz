@@ -9,7 +9,7 @@ btn.addEventListener("click", () => {
     const rg = /^([1-9]\d*|0)$/; //正規表現調べた。あまり読めない。これは整数のみを表現してる。
     for(let i = 1; i < 100; i++){         
         const newElement = document.createElement("p");　//<p></p>を追加したいので新しく作る
-        if (fNum === "" || bNum === "" || rg.test(fNum) === false || rg.test(fNum) === false) {　//正規表現.test(value)はtrueを返すらしい
+        if (fNum === "" || bNum === "" || rg.test(fNum) === false || rg.test(bNum) === false) {　//正規表現.test(value)はtrueを返すらしい
             getOutput.innerHTML = "整数値を入力してください。"; //１回だけ表示させたかったのでinnerHTMLを使ってみる。    
         } else if(i % fNum === 0 && i % bNum === 0) { //iが入力値で割り切れたら、その値の倍数なので表示させるという処理。
             newElement.textContent = "FizzBuzz " + parseInt(i); //新しいpタグの中の文章           
